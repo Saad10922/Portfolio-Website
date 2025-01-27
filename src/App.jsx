@@ -1,16 +1,12 @@
-
+import Navbar from './components/navbar/index'
+import Main from './components/main/index'
 import './App.css'
-
 function App() {
 
   return (
-     <div className='bg-white h-auto w-full overflow-hidden grid grid-cols-2'  >
-      <span></span>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li></li>
-      </ul>
+    <div className='h-full w-full overflow-hidden grid row-auto'>
+       <Navbar />
+       <Main  />
      </div>
   )
 }
