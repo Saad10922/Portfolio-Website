@@ -1,6 +1,7 @@
 import Navbar from './components/navbar/index'
 import Main from './components/main/index'
 import Vision from './components/vision/index'
+import Blogs from './components/blog/index'
 import './App.css'
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
        <Navbar />
        <Main  />
        <Vision />
+       <Blogs />
      </div>
   )
 }

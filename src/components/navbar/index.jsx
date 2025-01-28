@@ -25,7 +25,7 @@ const Navbar = () => {
        <ul className='grid grid-cols-6'>
         <li>Home</li>
         <li>Vision</li>
-        <li>Blogs</li>
+        <li>Blog</li>
         <li>Testimonials</li>
         <li>Awards</li>
         <li>Contact us</li>
