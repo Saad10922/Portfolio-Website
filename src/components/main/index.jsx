@@ -10,7 +10,7 @@ const Main = () => {
             <p className='text-2xl'>Thought Leader, Tech Entrepreneur, Investor</p>
             <span className='text-4xl font-semibold'>Founder and CEO</span>
             <p className='text-2xl'>With a passion for tech and a lifelong commitment to nurturing visionary entrepreneurs, I am eager to dedicate my life to transforming lives through innovation.</p>
-                      <button className='bg-white text-black px-6 py-3 mt-4 ml-10 w-40 h-16 text-2xl text-center relative group'>
+                      <button className='bg-white text-black px-6 py-3 mt-4 ml-10 w-30 h-10 rounded-[2%] text-[16px] text-center relative group'>
                         <span className='relative z-10'>Lets Talk<span className='transition-transform duration-300 inline-block group-hover:translate-x-2'>{`>`}</span></span>
                       </button>            
             </div>            <div className='w-[1/2%]'><img className='w-full h-full' src={main_img} alt="main" /></div>

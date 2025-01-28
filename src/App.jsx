@@ -1,5 +1,6 @@
 import Navbar from './components/navbar/index'
 import Main from './components/main/index'
+import Vision from './components/vision/index'
 import './App.css'
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <div className='h-full w-full overflow-hidden'>
        <Navbar />
        <Main  />
+       <Vision />
      </div>
   )
 }
