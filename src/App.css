@@ -3,3 +3,10 @@
 .roboto {
   font-family: "Roboto", sans-serif;
 }
+
+.testimonials-bg {
+  background-image: url('src/assets/images/testimonials.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

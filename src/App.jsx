@@ -3,6 +3,7 @@ import Main from './components/main/index'
 import Vision from './components/vision/index'
 import Blogs from './components/blog/index'
 import Awards from './components/awards/index'
+import Testimonials from './components/testimonials/index'
 import './App.css'
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
        <Vision />
        <Blogs />
        <Awards />
+       <Testimonials />
      </div>
   )
 }

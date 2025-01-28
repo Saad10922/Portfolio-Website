@@ -21,7 +21,7 @@ const Navbar = () => {
   <nav className={`grid grid-cols-2 fixed w-full h-20 pt-8 transition-all duration-1000 ${
     scrolled ? 'bg-white text-black shadow-md' : 'bg-[#1D1D1D] text-white'
   } pt-3`}>
-       <span className='w-0.5 ml-16 text-4xl whitespace-nowrap'>Usman Asif</span>      
+       <span className='w-0.5 ml-16 text-4xl whitespace-nowrap'>Muhammad Usman</span>      
        <ul className='grid grid-cols-6'>
         <li>Home</li>
         <li>Vision</li>

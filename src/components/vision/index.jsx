@@ -41,22 +41,22 @@ const Vision = () => {
       <div>
       <div className='bg-white grid grid-cols-2 h-[25%]'>
           <div className='w-[1/2] p-30 pt-40' >
-          <span className='text-2xl font-bold'>My Vision</span>
-          <p className='text-[1rem] leading-relaxed'>I have great ambitions for Devsinc, envisioning a flourishing future for Pakistan's tech industry and a surge in employment opportunities for my fellow Pakistanis. I am committed to creating 80,000 jobs in Pakistan and building a strong community of IT experts who can deliver top-notch solutions to clients worldwide.</p>
+          <span className='text-3xl font-bold'>My Vision</span>
+          <p className='text-2xl leading-relaxed'>I have great ambitions for Devsinc, envisioning a flourishing future for Pakistan's tech industry and a surge in employment opportunities for my fellow Pakistanis. I am committed to creating 80,000 jobs in Pakistan and building a strong community of IT experts who can deliver top-notch solutions to clients worldwide.</p>
           </div>
           <div className='w-[1/2]'><img src={vision} /></div>
       </div>
       <div className='achievements bg-black h-[10%] grid grid-cols-3 text-white'>
-          <div className='investments px-30 py-10'>
-              <span  className='text-3xl ml-6'>{investments}+</span>
+          <div className='investments px-auto py-20 items-center justify-center flex flex-col'>
+              <span  className='text-3xl '>{investments}+</span>
               <p className='text-[20px]'>Investments</p>
           </div>
-          <div className='projects px-30 py-10'>
-              <span className='text-3xl ml-6'>{projects}+</span>
+          <div className='projects px-auto py-20 items-center justify-center flex flex-col'>
+              <span className='text-3xl '>{projects}+</span>
               <p className='text-[20px]'>Projects Completed</p>
           </div>
-          <div className='startups px-30 py-10'>
-              <span className='text-3xl ml-6'>{startups}+</span>
+          <div className='startups px-auto py-20 items-center justify-center flex flex-col'>
+              <span className='text-3xl '>{startups}+</span>
               <p className='text-[20px]'>Startup Consulting</p>
           </div>
       </div>
