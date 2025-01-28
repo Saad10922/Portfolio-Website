@@ -18,9 +18,9 @@ const Navbar = () => {
     }
   }, []) 
   return (
-  <nav className={`grid grid-cols-2 fixed w-full transition-all duration-700 ${
-    scrolled ? 'bg-white text-black shadow-md' : 'bg-gray-950 text-white'
-  } mt-3`}>
+  <nav className={`grid grid-cols-2 fixed w-full h-20 pt-8 transition-all duration-900 ${
+    scrolled ? 'bg-white text-black shadow-md' : 'bg-[#1D1D1D] text-white'
+  } pt-3`}>
        <span className='w-0.5 ml-16 text-4xl whitespace-nowrap'>Usman Asif</span>      
        <ul className='grid grid-cols-6'>
         <li>Home</li>
