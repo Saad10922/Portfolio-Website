@@ -4,6 +4,7 @@ import Vision from './components/vision/index'
 import Blogs from './components/blog/index'
 import Awards from './components/awards/index'
 import Testimonials from './components/testimonials/index'
+import Contact from './components/contactus/index'
 import './App.css'
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
        <Blogs />
        <Awards />
        <Testimonials />
+       <Contact />
      </div>
   )
 }
