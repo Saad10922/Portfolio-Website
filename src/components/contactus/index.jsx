@@ -27,7 +27,8 @@ const Contact = () => {
   }
 
   return (
-    <div className='flex gap-10 bg-black max-h-screen py-10'>
+    <div
+    id="contact" className='flex gap-10 bg-black max-h-screen py-10'>
     <div className='message_section grid h-full justify-center items-center mx-16 w-[50%]'>
     <span className='font-semibold text-3xl text-white mb-2'>Message</span>
     <div className="w-full"> 

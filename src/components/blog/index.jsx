@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { memo } from 'react'
 
-const Blogs = () => {
+const Blogs = memo(() => {
   return (
-    <div className='blog_wrapper bg-white min-h-screen'>
+    <div id="blog" className='blog_wrapper bg-white min-h-screen'>
         <span className='text-black text-[40px] font-medium flex justify-center pt-20'>Blog</span>
         <div className='grid grid-cols-3 gap-12 p-10'>
             <div className='shadow-2xl h-60 bg-gray-100 rounded-lg'></div>
@@ -12,6 +12,6 @@ const Blogs = () => {
        
         </div>
     </div>  )
-}
+})
 
 export default Blogs

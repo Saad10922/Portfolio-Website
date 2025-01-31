@@ -29,12 +29,12 @@ const Navbar = () => {
   }`}>
        <span className='w-0.5 text-4xl ml-20 whitespace-nowrap'>Muhammad Usman</span>      
        <ul className='flex gap-10'>
-        <li><a onClick={() => scrollToSection('home')} style={{cursor: 'pointer'}}>Home</a></li>
-        <li><a onClick={() => scrollToSection('vision')} style={{cursor: 'pointer'}}>Vision</a></li>
-        <li><a onClick={() => scrollToSection('blog')} style={{cursor: 'pointer'}}>Blog</a></li>
-        <li><a onClick={() => scrollToSection('testimonial')} style={{cursor: 'pointer'}}>Testimonials</a></li>
-        <li><a onClick={() => scrollToSection('awards')} style={{cursor: 'pointer'}}>Awards</a></li>
-        <li><a onClick={() => scrollToSection('contact')} style={{cursor: 'pointer'}}>Contact Us</a></li>
+        <li><a onClick={() => scrollToSection('home')} className='hover:text-blue-500 hover:border-b-2 hover:border-blue-500 transition-all duration-300' style={{cursor: 'pointer'}}>Home</a></li>
+        <li><a onClick={() => scrollToSection('vision')} className='hover:text-blue-500 hover:border-b-2 hover:border-blue-500 transition-all duration-300' style={{cursor: 'pointer'}}>Vision</a></li>
+        <li><a onClick={() => scrollToSection('blog')} className='hover:text-blue-500 hover:border-b-2 hover:border-blue-500 transition-all duration-300' style={{cursor: 'pointer'}}>Blog</a></li>
+        <li><a onClick={() => scrollToSection('testimonial')} className='hover:text-blue-500 hover:border-b-2 hover:border-blue-500 transition-all duration-300' style={{cursor: 'pointer'}}>Testimonials</a></li>
+        <li><a onClick={() => scrollToSection('awards')} className='hover:text-blue-500 hover:border-b-2 hover:border-blue-500 transition-all duration-300' style={{cursor: 'pointer'}}>Awards</a></li>
+        <li><a onClick={() => scrollToSection('contact')} className='hover:text-blue-500 hover:border-b-2 hover:border-blue-500 transition-all duration-300' style={{cursor: 'pointer'}}>Contact Us</a></li>
       </ul>
     </nav>
   )

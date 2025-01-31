@@ -43,7 +43,8 @@ const Testimonials = () => {
         backgroundImage: `url(src/assets/images/testimonials.jpg)`,
         backgroundPosition: `50% ${Math.min(scrollPosition * 0.5, window.innerHeight)}px`,
         backgroundSize: 'cover',
-        backgroundAttachment: 'fixed'
+        backgroundAttachment: 'fixed',
+        zIndex: '-1'
       }}
     >
       <span className='text-white text-4xl font-bold flex justify-center mt-10 mb-20'>Testimonials</span>

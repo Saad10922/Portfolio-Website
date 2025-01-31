@@ -24,7 +24,7 @@ const Main = () => {
     }, [])
 
     return (
-      <div className="overflow-hidden">
+      <div id="home" className="overflow-hidden">
         <div className='grid grid-cols-2 bg-[#1D1D1D] w-full min-h-screen text-white'>
           <div className='w-full px-10 flex flex-col justify-center gap-6 lg:p-40'>
             <span className='font-medium text-4xl'>Muhammad Usman</span>
