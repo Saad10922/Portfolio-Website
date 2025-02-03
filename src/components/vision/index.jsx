@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import vision from '../../assets/images/vision.jpg';
 
-const Vision = () => {
+const About = () => {
   const [investments, setInvestments] = useState(0);
   const [projects, setProjects] = useState(0);
   const [startups, setStartups] = useState(0);
@@ -83,10 +83,10 @@ const Vision = () => {
 
   return (
     <div id="vision">
-      {/* Vision Section */}
+      {/* About Section */}
       <div className='bg-black grid grid-cols-1 md:grid-cols-2 min-h-[50vh]  text-white'>
         <div className='order-2 md:order-1 px-10 lg:px-14 xl:px-16 py-4  md:p-10 flex flex-col justify-center'>
-          <span className='text-xl md:text-2xl font-bold'>My Vision</span>
+          <span className='text-xl md:text-2xl font-bold'>About Me</span>
           <p className='sm:text-lg md:text-[12px] lg:text-[14px] xl:text-lg mt-2 leading-relaxed'>
             I have great ambitions for Devsinc, envisioning a flourishing future for Pakistan's tech industry and a surge in employment opportunities for my fellow Pakistanis. 
             I am committed to creating 80,000 jobs in Pakistan and building a strong community of IT experts who can deliver top-notch solutions to clients worldwide.
@@ -147,4 +147,4 @@ const Vision = () => {
   );
 };
 
-export default Vision;
+export default About;

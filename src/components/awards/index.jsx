@@ -44,9 +44,9 @@ const Awards = () => {
   ]
 
   return (
-    <div id="awards" class="bg-black py-12">
+    <div id="awards" class="bg-[url(src/assets/images/education_background.jpg)] py-12">
       <div class="max-w-7xl mx-auto px-4 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 xl:gap-x-16">
 
           <div class="bg-white rounded-lg shadow-md p-6">
             <h2 class="text-2xl font-bold mb-4">EDUCATION</h2>

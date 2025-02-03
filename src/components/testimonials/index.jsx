@@ -2,7 +2,7 @@ import React from 'react'
 
 const index = () => {
   return (
-    <section id="testimonies" class="py-20 bg-slate-900">
+    <section id="testimonial" class="py-20 bg-slate-900">
     <div class="max-w-6xl mx-8 md:mx-10 lg:mx-20 xl:mx-auto">
 
 
