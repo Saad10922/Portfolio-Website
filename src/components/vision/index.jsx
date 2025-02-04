@@ -1,6 +1,23 @@
 import React, { useState, useEffect, useRef } from 'react';
 import vision from '../../assets/images/vision.jpg';
-import react_img from '../../assets/images/react.png'
+import web_automation_img from '../../assets/icons/web_auto.png';
+import abTesting from '../../assets/icons/ab-testing.png'
+import acceptanceTesting from '../../assets/icons/acceptance-testing.png';
+import adhocTesting from '../../assets/icons/adhoc-testing.png';
+import functionalTesting from '../../assets/icons/functional-testing.png';
+import manualTesting from '../../assets/icons/manual_testing.png';
+import integrationTesting from '../../assets/icons/integration-testing.png';
+import mobileAutomation from '../../assets/icons/mobile-automation.png';
+import regressionTesting from '../../assets/icons/regression-testing.png';
+import sanityTesting from '../../assets/icons/sanity-testing.png';
+import smokeTesting from '../../assets/icons/smoke-testing.png';
+import testManagement from '../../assets/icons/test_management.png';
+import testPlanning from '../../assets/icons/test_planning.png';
+import testCases from '../../assets/icons/test-cases.png';
+import testExecution from '../../assets/icons/test-execution.png';
+import uatTesting from '../../assets/icons/uat-testing.png';
+
+
 
 const AboutMe = () => {
   const [investments, setInvestments] = useState(0);
@@ -9,6 +26,7 @@ const AboutMe = () => {
   const [isAnimating, setIsAnimating] = useState(false);
   const [isCountingComplete, setIsCountingComplete] = useState(false);
   const observerRef = useRef(null);
+  
 
   useEffect(() => {
     const startCounting = () => {
@@ -82,14 +100,70 @@ const AboutMe = () => {
     };
   }, []);
 
+  const skills = {
+    "Testing Types & Methodologies": [
+      "Web Automation Testing", "Manual Testing", "Mobile Automation Testing", "Test Management", "Test Planning",
+      "Test Cases", "Test Execution", "Integration Testing", "AB Testing", "Functional Testing", "Regression Testing",
+      "Smoke Testing", "Sanity Testing", "UAT Testing", "Acceptance Testing", "Adhoc Testing"
+    ],
+    "Performance & Security Testing": ["Load Testing", "Performance Testing", "Stress Testing", "Security Testing"],
+    "Specialized Testing Domains": [
+      "API Testing", "Data Testing", "Backend Testing", "ETL Testing", "Ecommerce Platform Testing",
+      "Medical Products Testing", "Payment Gateways Testing", "Trading Platforms Testing"
+    ],
+    "Programming & Scripting Languages": [
+      "Java", "JavaScript", "Ruby on Rails", "Python", "PHP", "HTML5", "CSS3", "Shell Scripting"
+    ],
+    "Test Automation Tools & Frameworks": [
+      "Cypress", "Playwright", "Test Cafe", "Puppeteer", "Selenium", "Selenium WebDriver", "Webdriver.io",
+      "Codeception", "Cucumber", "Mocha", "Jasmine", "PactumJs", "Robot Framework", "Page Object Model",
+      "Katalon Studio"
+    ],
+    "API & Backend Testing Tools": ["Postman", "Boto3", "Athena"],
+    "CI/CD & DevOps": [
+      "GitHub", "GitHub Actions", "CircleCI", "Jenkins", "CI/CD", "AWS Code Pipeline", "AWS Code Build",
+      "AWS Services", "AWS Lambda"
+    ],
+    "Mobile Testing Tools": ["Appium", "Android Studio", "Appium Inspector", "UiAutomator", "XCUITest", "Flutter Driver"],
+    "Performance & Load Testing Tools": ["K6", "JMeter"],
+    "Agile & Test Management Tools": ["Agile", "Jira", "Zephyr", "Test Rails"],
+    "AI & Machine Learning Testing": ["TensorFlow", "NLP Testing"],
+    "Content Management & SaaS": ["CMS", "SAAS", "Sales Force"]
+  };
+  const skillIcons = {
+    "Web Automation Testing": web_automation_img,
+    "AB Testing": abTesting,
+    "Acceptance Testing": acceptanceTesting,
+    "Adhoc Testing": adhocTesting,
+    "Functional Testing": functionalTesting,
+    "Manual Testing": manualTesting,
+    "Mobile Automation Testing": mobileAutomation,
+    "Regression Testing": regressionTesting,
+    "Sanity Testing": sanityTesting,
+    "Smoke Testing": smokeTesting,
+    "Test Management": testManagement,
+    "Test Planning": testPlanning,
+    "Test Cases": testCases,
+    "Test Execution": testExecution,
+    "UAT Testing": uatTesting,
+    "Integration Testing": integrationTesting
+    // ... add mappings for all your skills
+  };
+  
   return (
-    <div className='About Section bg-gray-900 text-white'>
+    <div id="about" className='About Section bg-gray-900 text-white'>
+      {/* ... (your vision and about section code) */}
       <div className='bg-black grid grid-cols-1 md:grid-cols-2 min-h-[50vh] text-white'>
         <div className='order-2 md:order-1 px-10 lg:px-14 xl:px-16 py-4 md:p-10 flex flex-col justify-center'>
           <span className='text-xl md:text-2xl font-bold'>About Me</span>
           <p className='sm:text-lg md:text-[12px] lg:text-[14px] xl:text-lg mt-2 leading-relaxed'>
-            I have great ambitions for Devsinc, envisioning a flourishing future for Pakistan's tech industry and a surge in employment opportunities for my fellow Pakistanis. 
-            I am committed to creating 80,000 jobs in Pakistan and building a strong community of IT experts who can deliver top-notch solutions to clients worldwide.
+          Results-driven SQA Automation Engineer with over eight years of experience in manual and automation testing for web,
+mobile, and desktop applications. Skilled in designing and implementing comprehensive testing strategies across
+various platforms, including Frontend, Backend, APIs, Databases, and AWS applications. Proficient in multiple
+programming languages with expertise in different testing types such as regression, smoke, sanity, and security testing.
+Known for enhancing software quality, reducing critical defects, and accelerating release cycles through effective test
+planning and execution. Adept at leading testing efforts for high-impact projects and collaborating with cross-functional
+teams to deliver reliable and high-performing software solutions.
           </p>
         </div>
         <div className='order-1 md:order-2 h-[250px] md:h-full'>
@@ -100,83 +174,27 @@ const AboutMe = () => {
       <div className="py-12 px-6 md:px-12 lg:px-24">
         <div className="bg-gray-900 text-white py-12 px-6 md:px-12 lg:px-24">
           <div>
-            <h2 className="text-3xl font-bold mb-4">Technical Skills & Tools</h2>
+            
+            <h2 className="text-3xl font-bold xl:mb-16 text-center">Technical Skills & Tools</h2>
 
-            <div className="mb-8">
-              <h3 className="text-2xl font-semibold mb-2">Programming Languages</h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-                <div className="bg-gray-800 rounded-lg p-4 flex flex-col items-center">
-                  <span className="text-4xl">JS</span>
-                  <p className="mt-2">JavaScript</p>
-                </div>
-                <div className="bg-gray-800 rounded-lg p-4 flex flex-col items-center">
-                  <span className="text-4xl">TS</span>
-                  <p className="mt-2">TypeScript</p>
-                </div>
-                <div className="bg-gray-800 rounded-lg p-4 flex flex-col items-center">
-                  <span className="text-4xl">py</span>
-                  <p className="mt-2">Python</p>
-                </div>
-                <div className="bg-gray-800 rounded-lg p-4 flex flex-col items-center">
-                  <span className="text-4xl">php</span>
-                  <p className="mt-2">PHP</p>
-                </div>
-                <div className="bg-gray-800 rounded-lg p-4 flex flex-col items-center">
-                  <span className="text-4xl">C</span>
-                  <p className="mt-2">C</p>
-                </div>
-                <div className="bg-gray-800 rounded-lg p-4 flex flex-col items-center">
-                  <span className="text-4xl">C++</span>
-                  <p className="mt-2">C++</p>
-                </div>
-                <div className="bg-gray-800 rounded-lg p-4 flex flex-col items-center">
-                  <span className="text-4xl">MySQL</span>
-                  <p className="mt-2">SQL</p>
+            {Object.entries(skills).map(([category, skillList]) => (
+              <div key={category} className="mb-8">
+                <h3 className="text-[20px] text-blue-400 font-semibold mb-4">{category}</h3>
+                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                  {skillList.map((skill) => (
+                    <div key={skill} className="bg-gray-800 rounded-lg p-4 flex flex-col items-center transform transition-all duration-300 hover:scale-105 hover:bg-gray-700 hover:shadow-lg hover:shadow-cyan-500/50 cursor-pointer">
+                      <div className="h-16 w-16"><img src={skillIcons[skill]} alt={skill.slice(0,3)}/></div>
+                      <p className="mt-2 text-center">{skill}</p>
+                    </div>
+                  ))}
                 </div>
               </div>
-            </div>
-
-            <div>
-              <h3 className="text-2xl font-semibold mb-2">Frontend</h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-                <div className="bg-gray-800 rounded-lg p-4 flex flex-col items-center">
-                  <div className="w-16 h-16"><img src={react_img} alt="#" className="w-full h-full object-contain" /></div>
-                  <p className="mt-2">React</p>
-                </div>
-                <div className="bg-gray-800 rounded-lg p-4 flex flex-col items-center">
-                  <span className="text-4xl">N</span>
-                  <p className="mt-2">Next.js</p>
-                </div>
-                <div className="bg-gray-800 rounded-lg p-4 flex flex-col items-center">
-                  <span className="text-4xl">V</span>
-                  <p className="mt-2">Vue.js</p>
-                </div>
-                <div className="bg-gray-800 rounded-lg p-4 flex flex-col items-center">
-                  <span className="text-4xl">A</span>
-                  <p className="mt-2">Angular</p>
-                </div>
-                <div className="bg-gray-800 rounded-lg p-4 flex flex-col items-center">
-                  <span className="text-4xl">jQ</span>
-                  <p className="mt-2">jQuery</p>
-                </div>
-                <div className="bg-gray-800 rounded-lg p-4 flex flex-col items-center">
-                  <span className="text-4xl">B</span>
-                  <p className="mt-2">Bootstrap</p>
-                </div>
-                <div className="bg-gray-800 rounded-lg p-4 flex flex-col items-center">
-                  <span className="text-4xl">~</span>
-                  <p className="mt-2">Tailwind CSS</p>
-                </div>
-                <div className="bg-gray-800 rounded-lg p-4 flex flex-col items-center">
-                  <span className="text-4xl">S</span>
-                  <p className="mt-2">SCSS</p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
-        <div className='achievements bg-black py-6 md:py-10 grid grid-cols-1 md:grid-cols-3 gap-6 text-white text-center mt-12'>
+
+      <div className='achievements bg-black py-6 md:py-10 grid grid-cols-1 md:grid-cols-3 gap-6 text-white text-center mt-12'>
           {[
             { value: investments, label: "Investments" },
             { value: projects, label: "Projects Completed" },

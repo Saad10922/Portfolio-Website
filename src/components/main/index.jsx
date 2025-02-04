@@ -45,7 +45,7 @@ const Main = () => {
           </div>
           <div className='w-full px-4 py-6 sm:px-6 md:px-10 flex flex-col justify-center gap-2 md:gap-4 lg:p-20 my-auto order-2 md:order-1'>
             <span className='font-normal text-lg sm:text-xl md:text-[14px] md:font-medium lg:font-normal lg:text-2xl xl:text-3xl'>Muhammad Usman</span>
-            <p className='text-base sm:text-lg md:text-[12px] lg:text-[18px] xl:text-lg'>Thought Leader, Tech Entrepreneur, Investor</p>
+            <p className='text-base sm:text-lg md:text-[12px] lg:text-[18px] xl:text-lg'>SQA Automation Engineer | Freelancer | ISTQB®CTFL</p>
             <span className='text-lg sm:text-xl md:text-[14px] md:font-bold lg:text-2xl lg:font-normal xl:text-3xl font-medium'>Founder and CEO</span>
             <p className='text-base sm:text-lg md:text-[12px] lg:text-[18px] xl:text-lg'>With a passion for tech and a lifelong commitment to nurturing visionary entrepreneurs, I am eager to dedicate my life to transforming lives through innovation.</p>
             <div className='mt-4'>
