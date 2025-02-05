@@ -16,8 +16,10 @@ import testPlanning from '../../assets/icons/test_planning.png';
 import testCases from '../../assets/icons/test-cases.png';
 import testExecution from '../../assets/icons/test-execution.png';
 import uatTesting from '../../assets/icons/uat-testing.png';
-
-
+import loadTesting from '../../assets/icons/load-testing.png';
+import stressTesting from '../../assets/icons/stress-testing.png';
+import performanceTesting from '../../assets/icons/performance-testing.png';
+import securityTesting from '../../assets/icons/security-testing.png';
 
 const AboutMe = () => {
   const [investments, setInvestments] = useState(0);
@@ -146,8 +148,11 @@ const AboutMe = () => {
     "Test Cases": testCases,
     "Test Execution": testExecution,
     "UAT Testing": uatTesting,
-    "Integration Testing": integrationTesting
-    // ... add mappings for all your skills
+    "Integration Testing": integrationTesting,
+    "Load Testing" : loadTesting,
+    "Stress Testing" : stressTesting,
+    "Performance Testing" : performanceTesting,
+    "Security Testing" :securityTesting
   };
   
   return (
