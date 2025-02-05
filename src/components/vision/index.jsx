@@ -20,6 +20,39 @@ import loadTesting from '../../assets/icons/load-testing.png';
 import stressTesting from '../../assets/icons/stress-testing.png';
 import performanceTesting from '../../assets/icons/performance-testing.png';
 import securityTesting from '../../assets/icons/security-testing.png';
+import apiTesting from '../../assets/icons/api-testing.png'
+import dataTesting from '../../assets/icons/data-testing.png'
+import backendTesting from '../../assets/icons/backend-testing.png'
+import ETLTesting from '../../assets/icons/etl-testing.png'
+import ecommerceTesting from '../../assets/icons/ecommerce-testing.png'
+import medicalTesting from '../../assets/icons/medical-testing.png'
+import gatewayTesting from '../../assets/icons/gateway-testing.png'
+import tradingTesting from '../../assets/icons/trading-testing.png'
+import java from '../../assets/icons/java.png'
+import javaScript from '../../assets/icons/js.png'
+import rubyOnRails from '../../assets/icons/ruby-on-rails.png'
+import python from '../../assets/icons/python.png'
+import php from '../../assets/icons/php.png'
+import html5 from '../../assets/icons/html.png'
+import css3 from '../../assets/icons/css-3.png'
+import shellScripting from '../../assets/icons/shell.png'
+import cypress from '../../assets/icons/cypress.png'
+import playWright from '../../assets/icons/playwright.png'
+import testCafe from '../../assets/icons/testcafe.png'
+import puppeteer from '../../assets/icons/puppeteer.png'
+import selenium from '../../assets/icons/Selenium.jpeg'
+import seleniumWebDriver from '../../assets/icons/selenium-web.jpeg'
+import webdriver from '../../assets/icons/webdriver.png'
+import Codeception from '../../assets/icons/codeception.png'
+import Cucumber from '../../assets/icons/cucumber.png'
+import Mocha from '../../assets/icons/mocha.png'
+import Jasmine from '../../assets/icons/jasmine.png'
+import pactum from '../../assets/icons/PactumJs.png'
+import robot from '../../assets/icons/robot-framework.png'
+import pom from '../../assets/icons/pom.png'
+import Katalon from '../../assets/icons/katalon.png'
+
+
 
 const AboutMe = () => {
   const [investments, setInvestments] = useState(0);
@@ -152,7 +185,38 @@ const AboutMe = () => {
     "Load Testing" : loadTesting,
     "Stress Testing" : stressTesting,
     "Performance Testing" : performanceTesting,
-    "Security Testing" :securityTesting
+    "Security Testing" :securityTesting,
+    "API Testing": apiTesting,
+    "Data Testing": dataTesting,
+    "Backend Testing": backendTesting,
+    "ETL Testing": ETLTesting,
+    "Ecommerce Platform Testing" : ecommerceTesting,
+    "Medical Products Testing": medicalTesting,
+    "Payment Gateways Testing" : gatewayTesting,
+    "Trading Platforms Testing" : tradingTesting,
+    "Java": java,
+    "JavaScript": javaScript,
+    "Ruby on Rails": rubyOnRails,
+    "Python": python,
+    "PHP": php,
+    "HTML5":html5,
+    "CSS3":css3,
+    "Shell Scripting":shellScripting,
+    "Cypress": cypress,
+    "Test Cafe": testCafe,
+    "Puppeteer": puppeteer,
+    "Selenium": selenium,
+    "Selenium WebDriver": seleniumWebDriver,
+    "Webdriver.io": webdriver,
+    "Codeception": Codeception,
+    "Cucumber": Cucumber,
+    "Mocha": Mocha,
+    "Jasmine": Jasmine,
+    "PactumJs": pactum,
+    "Robot Framework": robot,
+    "Page Object Model": pom,
+    "Katalon Studio": Katalon,
+    "Playwright": playWright,
   };
   
   return (
