@@ -51,7 +51,7 @@ const Navbar = () => {
                 (scrolled ? 'bg-white text-black' : 'bg-[#1D1D1D] text-white') 
               : 'hidden'
           }`}>
-            {['home', 'about', 'blog', 'testimonial', 'awards', 'contact'].map((section) => (
+            {['home', 'about', 'blog', 'testimonial', 'contact'].map((section) => (
               <li key={section}>
                 <a onClick={() => scrollToSection(section)}
                   className='relative inline-block hover:text-red-500 transition-all duration-300 

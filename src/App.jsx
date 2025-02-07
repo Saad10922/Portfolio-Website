@@ -1,8 +1,7 @@
 import Navbar from './components/navbar/index'
 import Main from './components/main/index'
-import Vision from './components/vision/index'
 import Blogs from './components/blog/index'
-import Awards from './components/awards/index'
+import AboutMe from './components/vision/index'
 import Testimonials from './components/testimonials/index'
 import Contact from './components/contactus/index'
 import './App.css'
@@ -12,9 +11,8 @@ function App() {
     <div className='h-full w-full overflow-hidden'>
        <Navbar />
        <Main  />
-       <Vision />
+       <AboutMe />
        <Blogs />
-       <Awards />
        <Testimonials />
        <Contact />
      </div>

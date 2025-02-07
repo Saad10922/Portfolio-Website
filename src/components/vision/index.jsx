@@ -51,11 +51,43 @@ import pactum from '../../assets/icons/PactumJs.png'
 import robot from '../../assets/icons/robot-framework.png'
 import pom from '../../assets/icons/pom.png'
 import Katalon from '../../assets/icons/katalon.png'
+import postman from '../../assets/icons/postman.png'
+import boto3 from '../../assets/icons/boto3.png'
+import athena from '../../assets/icons/athena.png'
+import github from '../../assets/icons/github.png'
+import githubActions from '../../assets/icons/github-actions.png'
+import circleCI from '../../assets/icons/circleCI.png'
+import jenkins from '../../assets/icons/jenkins.png'
+import cicd from '../../assets/icons/cicd.png'
+import awsCodePipeline from '../../assets/icons/pipeline.png'
+import awsCodeBuild from '../../assets/icons/build.png'
+import awsServices from '../../assets/icons/AWS.png'
+import awsLambda from '../../assets/icons/aws-lambda.png'
+import appium from '../../assets/icons/appium.png'
+import androidStudio from '../../assets/icons/android-studio.png'
+import inspector from '../../assets/icons/inspector.png'
+import uiAutomator from '../../assets/icons/ui-automater.png'
+import XCUITest from '../../assets/icons/xcui-testing.png'
+import flutter from '../../assets/icons/flutter.png'
+import k6 from '../../assets/icons/k6.png'
+import jMeter from '../../assets/icons/jmeter.png'
+import aglie from '../../assets/icons/agile.png'
+import jira from '../../assets/icons/jira.png'
+import zypher from '../../assets/icons/zephyr.png'
+import testRails from '../../assets/icons/testrail.png'
+import tensorFlow from '../../assets/icons/tensorflow.png'
+import nlpTesting from '../../assets/icons/nlp.png'
+import cms from '../../assets/icons/cms.png'
+import saas from '../../assets/icons/saas.png'
+import salesForce from '../../assets/icons/salesforce.png'
+
+
+
 
 
 
 const AboutMe = () => {
-  const [investments, setInvestments] = useState(0);
+  const [experience, setExperience] = useState(0);
   const [projects, setProjects] = useState(0);
   const [startups, setStartups] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
@@ -65,46 +97,46 @@ const AboutMe = () => {
 
   useEffect(() => {
     const startCounting = () => {
-      setInvestments(0);
+      setExperience(0);
       setProjects(0);
       setStartups(0);
       setIsAnimating(true);
       setIsCountingComplete(false);
 
-      const investmentsInterval = setInterval(() => {
-        setInvestments((prev) => {
-          if (prev >= 12) {
-            clearInterval(investmentsInterval);
-            return 12;
+      const experienceInterval = setInterval(() => {
+        setExperience((prev) => {
+          if (prev >= 13) {
+            clearInterval(experienceInterval);
+            return 13;
           }
           return prev + 1;
         });
-      }, 100);
+      }, 200);
 
       const projectsInterval = setInterval(() => {
         setProjects((prev) => {
-          if (prev >= 300) {
+          if (prev >= 23) {
             clearInterval(projectsInterval);
-            return 300;
-          }
-          return prev + 5;
-        });
-      }, 50);
-
-      const startupsInterval = setInterval(() => {
-        setStartups((prev) => {
-          if (prev >= 30) {
-            clearInterval(startupsInterval);
-            setIsAnimating(false);
-            setIsCountingComplete(true);
-            return 30;
+            return 23;
           }
           return prev + 1;
         });
-      }, 100);
+      }, 200);
+
+      const startupsInterval = setInterval(() => {
+        setStartups((prev) => {
+          if (prev >= 9) {
+            clearInterval(startupsInterval);
+            setIsAnimating(false);
+            setIsCountingComplete(true);
+            return 9;
+          }
+          return prev + 1;
+        });
+      }, 200);
 
       return () => {
-        clearInterval(investmentsInterval);
+        clearInterval(experienceInterval);
         clearInterval(projectsInterval);
         clearInterval(startupsInterval);
       };
@@ -115,7 +147,7 @@ const AboutMe = () => {
         const cleanup = startCounting();
         return () => cleanup();
       } else {
-        setInvestments(0);
+        setExperience(0);
         setProjects(0);
         setStartups(0);
         setIsAnimating(false);
@@ -136,7 +168,7 @@ const AboutMe = () => {
   }, []);
 
   const skills = {
-    "Testing Types & Methodologies": [
+    "Testing Types": [
       "Web Automation Testing", "Manual Testing", "Mobile Automation Testing", "Test Management", "Test Planning",
       "Test Cases", "Test Execution", "Integration Testing", "AB Testing", "Functional Testing", "Regression Testing",
       "Smoke Testing", "Sanity Testing", "UAT Testing", "Acceptance Testing", "Adhoc Testing"
@@ -217,6 +249,35 @@ const AboutMe = () => {
     "Page Object Model": pom,
     "Katalon Studio": Katalon,
     "Playwright": playWright,
+    "Boto3": boto3,
+    "Athena" : athena,
+    "GitHub": github,
+    "GitHub Actions": githubActions,
+    "CircleCI": circleCI,
+    "Jenkins": jenkins,
+    "CI/CD": cicd,
+    "AWS Code Pipeline": awsCodePipeline,
+    "AWS Code Build" : awsCodeBuild,
+    "AWS Services": awsServices,
+    "AWS Lambda": awsLambda,
+    "Appium": appium, 
+    "Android Studio": androidStudio, 
+    "Appium Inspector": inspector, 
+    "UiAutomator": uiAutomator, 
+    "XCUITest": XCUITest, 
+    "Flutter Driver": flutter,
+    "K6":k6,
+    "JMeter":jMeter,
+    "Agile": aglie,
+    "Jira": jira,
+    "Zephyr": zypher,
+    "Test Rails": testRails,
+    "TensorFlow": tensorFlow,
+    "NLP Testing": nlpTesting,
+    "CMS": cms,
+    "SAAS": saas,
+    "Sales Force":salesForce,
+    "Postman" : postman,
   };
   
   return (
@@ -265,7 +326,7 @@ teams to deliver reliable and high-performing software solutions.
 
       <div className='achievements bg-black py-6 md:py-10 grid grid-cols-1 md:grid-cols-3 gap-6 text-white text-center mt-12'>
           {[
-            { value: investments, label: "Investments" },
+            { value: experience, label: "Years Experience" },
             { value: projects, label: "Projects Completed" },
             { value: startups, label: "Startup Consulting" }
           ].map((item, index) => (
