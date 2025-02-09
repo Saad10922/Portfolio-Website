@@ -111,7 +111,7 @@ const AboutMe = () => {
           }
           return prev + 1;
         });
-      }, 200);
+      }, 150);
 
       const projectsInterval = setInterval(() => {
         setProjects((prev) => {
@@ -119,9 +119,9 @@ const AboutMe = () => {
             clearInterval(projectsInterval);
             return 23;
           }
-          return prev + 1;
+          return prev + 2;
         });
-      }, 200);
+      }, 150);
 
       const startupsInterval = setInterval(() => {
         setStartups((prev) => {
@@ -133,7 +133,7 @@ const AboutMe = () => {
           }
           return prev + 1;
         });
-      }, 200);
+      }, 150);
 
       return () => {
         clearInterval(experienceInterval);
@@ -281,12 +281,12 @@ const AboutMe = () => {
   };
   
   return (
-    <div id="about" className='About Section bg-gray-900 text-white'>
+    <div id="about-section" className='About Section bg-gray-900 text-white'>
       {/* ... (your vision and about section code) */}
-      <div className='bg-black grid grid-cols-1 md:grid-cols-2 min-h-[50vh] text-white'>
-        <div className='order-2 md:order-1 px-10 lg:px-14 xl:px-16 py-4 md:p-10 flex flex-col justify-center'>
-          <span className='text-xl md:text-2xl font-bold'>About Me</span>
-          <p className='sm:text-lg md:text-[12px] lg:text-[14px] xl:text-lg mt-2 leading-relaxed'>
+      <div id="about-content" className='bg-black grid grid-cols-1 md:grid-cols-2 min-h-[50vh] text-white'>
+        <div id="about-text" className='order-2 md:order-1 px-10 lg:px-14 xl:px-16 py-4 md:p-10 flex flex-col justify-center'>
+          <span id="about-title" className='text-xl md:text-2xl font-bold'>About Me</span>
+          <p id="about-description" className='sm:text-lg md:text-[12px] lg:text-[14px] xl:text-lg mt-2 leading-relaxed'>
           Results-driven SQA Automation Engineer with over eight years of experience in manual and automation testing for web,
 mobile, and desktop applications. Skilled in designing and implementing comprehensive testing strategies across
 various platforms, including Frontend, Backend, APIs, Databases, and AWS applications. Proficient in multiple
@@ -296,25 +296,25 @@ planning and execution. Adept at leading testing efforts for high-impact project
 teams to deliver reliable and high-performing software solutions.
           </p>
         </div>
-        <div className='order-1 md:order-2 h-[250px] md:h-full'>
-          <img src={vision} alt="Vision" className='h-full w-full object-cover' />
+        <div id="about-image" className='order-1 md:order-2 h-[250px] md:h-full'>
+          <img id="vision-image" src={vision} alt="Vision" className='h-full w-full object-cover' />
         </div>
       </div>
 
-      <div className="py-12 px-6 md:px-12 lg:px-24">
-        <div className="bg-gray-900 text-white py-12 px-6 md:px-12 lg:px-24">
-          <div>
+      <div id="skills-section" className="py-12 px-6 md:px-12 lg:px-24">
+        <div id="skills-container" className="bg-gray-900 text-white py-12 px-6 md:px-12 lg:px-24">
+          <div id="skills-content">
             
-            <h2 className="text-3xl font-bold xl:mb-16 text-center">Technical Skills & Tools</h2>
+            <h2 id="skills-title" className="text-2xl xl:text-3xl font-bold mb-8 xl:mb-16 text-center">Technical Skills & Tools</h2>
 
             {Object.entries(skills).map(([category, skillList]) => (
-              <div key={category} className="mb-8">
-                <h3 className="text-[20px] text-blue-400 font-semibold mb-4">{category}</h3>
-                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+              <div id={`skill-category-${category}`} key={category} className="mb-8">
+                <h3 id={`category-title-${category}`} className="text-[16px] font-bold lg:text-[20px] text-blue-400 lg:font-semibold mb-4">{category}</h3>
+                <div id={`skills-grid-${category}`} className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
                   {skillList.map((skill) => (
-                    <div key={skill} className="bg-gray-800 rounded-lg p-4 flex flex-col items-center transform transition-all duration-300 hover:scale-105 hover:bg-gray-700 hover:shadow-lg hover:shadow-cyan-500/50 cursor-pointer">
-                      <div className="h-16 w-16"><img src={skillIcons[skill]} alt={skill.slice(0,3)}/></div>
-                      <p className="mt-2 text-center">{skill}</p>
+                    <div id={`skill-item-${skill}`} key={skill} className="bg-gray-800 rounded-lg p-4 flex flex-col items-center transform transition-all duration-300 hover:scale-105 hover:bg-gray-700 hover:shadow-lg hover:shadow-cyan-500/50 cursor-pointer">
+                      <div id={`skill-icon-${skill}`} className="h-16 w-16"><img src={skillIcons[skill]} alt={skill.slice(0,3)}/></div>
+                      <p id={`skill-name-${skill}`} className="mt-2 text-center">{skill}</p>
                     </div>
                   ))}
                 </div>
@@ -324,33 +324,33 @@ teams to deliver reliable and high-performing software solutions.
         </div>
       </div>
 
-      <div className='achievements bg-black py-6 md:py-10 grid grid-cols-1 md:grid-cols-3 gap-6 text-white text-center mt-12'>
+      <div id="achievements-section" className='achievements bg-black py-6 md:py-10 grid grid-cols-1 md:grid-cols-3 gap-6 text-white text-center mt-12 xl:mt-6'>
           {[
             { value: experience, label: "Years Experience" },
             { value: projects, label: "Projects Completed" },
             { value: startups, label: "Startup Consulting" }
           ].map((item, index) => (
-            <div key={index} className="relative flex flex-col items-center justify-center">
-              <div className="relative w-[60px] sm:w-[80px] md:w-[100px] h-[60px] sm:h-[80px] md:h-[100px] flex items-center justify-center">
+            <div id={`achievement-item-${index}`} key={index} className="relative flex flex-col items-center justify-center">
+              <div id={`achievement-circle-${index}`} className="relative w-[60px] sm:w-[80px] md:w-[100px] h-[60px] sm:h-[80px] md:h-[100px] flex items-center justify-center">
                 {!isCountingComplete && (
-                  <svg className="absolute top-0 left-0 w-full h-full">
-                    <circle cx="30" cy="30" r="27" stroke="cyan" strokeWidth="3" fill="none"
+                  <svg id={`achievement-svg-${index}`} className="absolute top-0 left-0 w-full h-full">
+                    <circle id={`achievement-circle-sm-${index}`} cx="30" cy="30" r="27" stroke="cyan" strokeWidth="3" fill="none"
                       strokeDasharray="170"
                       strokeDashoffset="0"
                       className={`${isAnimating ? "animate-stroke" : ""} sm:hidden`} />
-                    <circle cx="40" cy="40" r="35" stroke="cyan" strokeWidth="3" fill="none"
+                    <circle id={`achievement-circle-md-${index}`} cx="40" cy="40" r="35" stroke="cyan" strokeWidth="3" fill="none"
                       strokeDasharray="220"
                       strokeDashoffset="0"
                       className={`${isAnimating ? "animate-stroke" : ""} hidden sm:block md:hidden`} />
-                    <circle cx="50" cy="50" r="45" stroke="cyan" strokeWidth="4" fill="none"
+                    <circle id={`achievement-circle-lg-${index}`} cx="50" cy="50" r="45" stroke="cyan" strokeWidth="4" fill="none"
                       strokeDasharray="283"
                       strokeDashoffset="0"
                       className={`${isAnimating ? "animate-stroke" : ""} hidden md:block`} />
                   </svg>
                 )}
-                <span className="text-xl sm:text-2xl md:text-3xl font-bold relative">{item.value}+</span>
+                <span id={`achievement-value-${index}`} className="text-xl sm:text-2xl md:text-3xl font-bold relative">{item.value}+</span>
               </div>
-              <p className='text-sm sm:text-base md:text-lg mt-2'>{item.label}</p>
+              <p id={`achievement-label-${index}`} className='text-sm sm:text-base md:text-lg mt-2'>{item.label}</p>
             </div>
           ))}
         </div>

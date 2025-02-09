@@ -1,5 +1,14 @@
 import React from 'react'
-
+import Manuel_Moreira from '../../assets/images/Manuel_Moreira.jpg'
+import Dorna_Mehrkish from '../../assets/images/Dorna_Mehrkish.jpg'
+import Carlos_Zillner from '../../assets/images/c_zillner.jpg'
+import Andy_Crebar from '../../assets/images/andy_crebar.jpg'
+import Bolo_Michelin from '../../assets/images/bolo_michelin.jpg'
+import Muhammad_Ashar_Javed from '../../assets/images/m-ashar.jpg'
+import Junaid_A from '../../assets/images/junaid_a.jpg'
+import Adil_Qayyum from '../../assets/images/adil-qayyum.jpg'
+import Noor_Ul_Ain from '../../assets/images/noor-ul-ain.jpg'
+import Muhammad_Tafseer_Haider from '../../assets/images/m_tafseer.jpg'
 const index = () => {
   return (
     <section id="testimonial" class="py-20 bg-slate-900">
@@ -23,8 +32,6 @@ const index = () => {
 
 
         <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
-
-
             <ul class="space-y-8">
                 <li class="text-sm leading-6">
                     <div class="relative group">
@@ -34,7 +41,7 @@ const index = () => {
                             <div
                                 class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                                 <div class="flex items-center space-x-4"><img
-                                        src="https://media.licdn.com/dms/image/v2/D4D03AQGVsOqft5Zf3g/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1701286183311?e=1744243200&v=beta&t=82oQF5phgmvlhLtLHzMpQ7qnCv634ud4r5bELPkpspY"
+                                        src={Manuel_Moreira}
                                         class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Kanye West" />
                                     <div>
                                         <h3 class="text-lg font-semibold text-white">Manuel Moreira</h3>
@@ -54,7 +61,7 @@ const index = () => {
                             <div
                                 class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                                 <div class="flex items-center space-x-4"><img
-                                        src="https://media.licdn.com/dms/image/v2/C4E03AQF2UD-dNs3UYA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1518484178504?e=1744243200&v=beta&t=z4ijb1nl9e5PNPPCVOMe4niJ7MpjtUIFiqbUvWQStAg"
+                                        src={Dorna_Mehrkish}
                                         class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Tim Cook" />
                                     <div>
                                         <h3 class="text-lg font-semibold text-white">Dorna Mehrkish</h3>
@@ -74,7 +81,7 @@ const index = () => {
                             <div
                                 class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                                 <div class="flex items-center space-x-4"><img
-                                        src="https://media.licdn.com/dms/image/v2/C4D03AQEZYUgY56caHQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1658549210330?e=1744243200&v=beta&t=WiUGi9SToD2xyOxlbz3SC_hJLz6I1ggmhD8l3knS7So"
+                                        src={Carlos_Zillner}
                                         class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Kanye West" />
                                     <div>
                                         <h3 class="text-lg font-semibold text-white">Carlos Zillner</h3>
@@ -94,7 +101,7 @@ const index = () => {
                             <div
                                 class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                                 <div class="flex items-center space-x-4"><img
-                                        src="https://media.licdn.com/dms/image/v2/D5603AQGPqg2yTz-tVg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1728379557978?e=1744243200&v=beta&t=w9eAwqXoCAvKJXQ9rCgVCSEDhCKRaKNkOnZrF2kMQds"
+                                        src={Andy_Crebar}
                                         class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Tim Cook" />
                                     <div>
                                         <h3 class="text-lg font-semibold text-white">Andy Crebar</h3>
@@ -118,11 +125,11 @@ const index = () => {
                             <div
                                 class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                                 <div class="flex items-center space-x-4"><img
-                                        src="https://media.licdn.com/dms/image/v2/D4E35AQG991JMaUQI1w/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1738938098495?e=1739548800&v=beta&t=mo4g8Bs1SLPv-yCuTImCN_PETICzIKHAIer8iCM0Cjg"
+                                        src={Bolo_Michelin}
                                         class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Parag Agrawal" />
                                     <div>
                                         <h3 class="text-lg font-semibold text-white">Bolo Michelin</h3>
-                                        <p class="text-gray-500 text-md">---------</p>
+                                        <p class="text-gray-500 text-md">CEO BEYOND</p>
                                     </div>
                                 </div>
                                 <p class="leading-normal text-gray-300 text-md">Here's what makes Muhammad exceptional - he transforms testing from a checkpoint into a competitive advantage. I've seen him build automation frameworks that achieved 90% test coverage while slashing manual testing effort by 70%. That's exactly why he stands out: he combines deep technical expertise with strategic vision.
@@ -139,7 +146,7 @@ const index = () => {
                             <div
                                 class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                                 <div class="flex items-center space-x-4"><img
-                                        src="https://media.licdn.com/dms/image/v2/D4D03AQFAA6WN5vdvPA/profile-displayphoto-shrink_200_200/B4DZTFnnMAHAAY-/0/1738482285361?e=1744243200&v=beta&t=AlEohNOs_LALtl7e8AviYgfwQmG7G4OlNotozTaGO7g"
+                                        src={Muhammad_Tafseer_Haider}
                                         class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Tim Cook" />
                                     <div>
                                         <h3 class="text-lg font-semibold text-white">Muhammad Tafseer Haider</h3>
@@ -159,7 +166,7 @@ const index = () => {
                             <div
                                 class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                                 <div class="flex items-center space-x-4"><img
-                                        src="https://media.licdn.com/dms/image/v2/C4D03AQHWa6zGE1Q6HA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1544876237704?e=1744243200&v=beta&t=LUkDN-dbOhILE3EML8D7xT2095exvNwxD5KImWx2BKs"
+                                        src={Noor_Ul_Ain}
                                         class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Tim Cook" />
                                     <div>
                                         <h3 class="text-lg font-semibold text-white">Noor ul ain</h3>
@@ -183,7 +190,7 @@ const index = () => {
                             <div
                                 class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                                 <div class="flex items-center space-x-4"><img
-                                        src="https://media.licdn.com/dms/image/v2/D4D03AQFKsMtVgttOhw/profile-displayphoto-shrink_200_200/B4DZNyVLlTHgAk-/0/1732789983911?e=1744243200&v=beta&t=xdz6acKmpwD1522hzja2EUmApOe7O_iL5LXWVMilc2Y"
+                                        src={Adil_Qayyum}
                                         class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Satya Nadella" />
                                     <div>
                                         <h3 class="text-lg font-semibold text-white">Adil Qayyum</h3>
@@ -203,7 +210,7 @@ const index = () => {
                             <div
                                 class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                                 <div class="flex items-center space-x-4"><img
-                                        src="https://media.licdn.com/dms/image/v2/D4D03AQFBrPhbiX4aqA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1688422091581?e=1744243200&v=beta&t=u6tLm__1GBN6XbFUzvu0OnUDv5c1PZUEbydV6Ix7eB8"
+                                        src={Junaid_A}
                                         class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Dan Schulman" />
                                     <div>
                                         <h3 class="text-lg font-semibold text-white">Junaid A.</h3>
@@ -223,7 +230,7 @@ const index = () => {
                             <div
                                 class="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                                 <div class="flex items-center space-x-4"><img
-                                        src="https://media.licdn.com/dms/image/v2/D4D03AQFDgAMA3z8_yQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1729508405743?e=1744243200&v=beta&t=Lp6f-UFr-qf6bWy3YB9Py4RMP9dQ14Z0ryA_xeiI78E"
+                                        src={Muhammad_Ashar_Javed}
                                         class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Satya Nadella" />
                                     <div>
                                         <h3 class="text-lg font-semibold text-white">Muhammad Ashar Javed</h3>

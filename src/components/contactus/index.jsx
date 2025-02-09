@@ -46,8 +46,13 @@ const Contact = () => {
     setErrors(newErrors)
 
     if (Object.keys(newErrors).length === 0) {
-      // Handle form submission here
-      console.log('Form submitted')
+      const mailtoLink = `mailto:saadq10922@gmail.com?subject=Contact Form Submission from ${name}&body=Name: ${name}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`
+      window.location.href = mailtoLink
+      setMessage('')
+      setName('')
+      setEmail('')
+      setAnswer('')
+      generateNewQuestion()
     }
   }
 
@@ -104,8 +109,8 @@ const Contact = () => {
         <div className='social_links text-white pt-2 px-4 lg:px-0 w-full lg:w-auto'>
           <div className='flex flex-col gap-y-3'>
           <span className='font-bold text-xl lg:text-2xl'>Get in touch</span>
-          <p className='text-sm lg:text-base'>Devsinc, 1160 Battery St suite 1111, San Francisco, CA 94111, USA</p>
-          <span className='text-sm lg:text-base'>Hi@usmanasif.com</span>
+          <p className='text-sm lg:text-base'>SprintSynergy, Empowering Your Digital Future with Cutting-Edge Software Testing Solutions.</p>
+          <span className='text-sm lg:text-base'>Hi@muhammad-usman.com</span>
           </div>
           <div className='py-6 lg:py-10'>
             <span className='text-xl lg:text-2xl font-bold'>Follow Us</span>
@@ -117,7 +122,7 @@ const Contact = () => {
                   <a href=""><img src={twitter} alt="" /></a>
                 </div>
                 <div className='linked_icon bg-white rounded-[6px] p-1.5 lg:p-2 w-8 lg:w-9'>
-                  <a href=""><img src={linkedin} alt="" /></a>
+                  <a href="https://www.linkedin.com/in/sdet-muhammadusman/" target='_blank'><img src={linkedin} alt="" /></a>
                 </div>
                 <div className='instagram_icon bg-white rounded-[6px] p-1.5 lg:p-2 w-8 lg:w-9'>
                   <a href=""><img src={instagram} alt="" /></a>
