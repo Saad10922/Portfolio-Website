@@ -105,9 +105,9 @@ const AboutMe = () => {
 
       const experienceInterval = setInterval(() => {
         setExperience((prev) => {
-          if (prev >= 13) {
+          if (prev >= 10) {
             clearInterval(experienceInterval);
-            return 13;
+            return 10;
           }
           return prev + 1;
         });
@@ -115,9 +115,9 @@ const AboutMe = () => {
 
       const projectsInterval = setInterval(() => {
         setProjects((prev) => {
-          if (prev >= 23) {
+          if (prev >= 20) {
             clearInterval(projectsInterval);
-            return 23;
+            return 20;
           }
           return prev + 2;
         });
@@ -281,9 +281,9 @@ const AboutMe = () => {
   };
   
   return (
-    <div id="about-section" className='About Section bg-gray-900 text-white'>
-      {/* ... (your vision and about section code) */}
-      <div id="about-content" className='bg-black grid grid-cols-1 md:grid-cols-2 min-h-[50vh] text-white'>
+    <div id="skills" className='About Section bg-gray-900 text-white'>
+      {/* ... (vision and about section code) */}
+      {/* <div id="about-content" className='bg-black grid grid-cols-1 md:grid-cols-2 min-h-[50vh] text-white'>
         <div id="about-text" className='order-2 md:order-1 px-10 lg:px-14 xl:px-16 py-4 md:p-10 flex flex-col justify-center'>
           <span id="about-title" className='text-xl md:text-2xl font-bold'>About Me</span>
           <p id="about-description" className='sm:text-lg md:text-[12px] lg:text-[14px] xl:text-lg mt-2 leading-relaxed'>
@@ -299,7 +299,7 @@ teams to deliver reliable and high-performing software solutions.
         <div id="about-image" className='order-1 md:order-2 h-[250px] md:h-full'>
           <img id="vision-image" src={vision} alt="Vision" className='h-full w-full object-cover' />
         </div>
-      </div>
+      </div> */}
 
       <div id="skills-section" className="py-12 px-6 md:px-12 lg:px-24">
         <div id="skills-container" className="bg-gray-900 text-white py-12 px-6 md:px-12 lg:px-24">

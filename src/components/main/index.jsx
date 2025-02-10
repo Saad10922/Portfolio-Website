@@ -47,8 +47,14 @@ const Main = () => {
           <div id="content-container" className='w-full px-4 py-6 sm:px-6 md:px-10 flex flex-col justify-center gap-2 md:gap-4 lg:p-20 my-auto order-2 md:order-1'>
             <span id="name" className='font-normal text-lg sm:text-xl md:text-[14px] md:font-medium lg:font-normal lg:text-2xl xl:text-3xl'>Muhammad Usman</span>
             <p id="title" className='text-base sm:text-lg md:text-[12px] lg:text-[18px] xl:text-lg'>SQA Automation Engineer | Freelancer | ISTQB®CTFL</p>
-            <span id="position" className='text-lg sm:text-xl md:text-[14px] md:font-bold lg:text-2xl lg:font-normal xl:text-3xl font-medium'>Founder and CEO</span>
-            <p id="description" className='text-base sm:text-lg md:text-[12px] lg:text-[18px] xl:text-lg'>With a passion for tech and a lifelong commitment to nurturing visionary entrepreneurs, I am eager to dedicate my life to transforming lives through innovation.</p>
+            <span id="position" className='text-lg sm:text-xl md:text-[14px] md:font-bold lg:text-2xl lg:font-normal xl:text-3xl font-medium'>About Me</span>
+            <p id="description" className='text-base sm:text-lg md:text-[12px] lg:text-[18px] xl:text-lg'>Results-driven SQA Automation Engineer with over eight years of experience in manual and automation testing for web,
+mobile, and desktop applications. Skilled in designing and implementing comprehensive testing strategies across
+various platforms, including Frontend, Backend, APIs, Databases, and AWS applications. Proficient in multiple
+programming languages with expertise in different testing types such as regression, smoke, sanity, and security testing.
+Known for enhancing software quality, reducing critical defects, and accelerating release cycles through effective test
+planning and execution. Adept at leading testing efforts for high-impact projects and collaborating with cross-functional
+teams to deliver reliable and high-performing software solutions.</p>
             <div id="button-container" className='mt-4'>
               <button 
                 id="contact-button"

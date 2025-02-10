@@ -3,6 +3,8 @@ import twitter from '../../assets/images/twitter.png'
 import facebook from '../../assets/images/facebook.png'
 import linkedin from '../../assets/images/linkedin.png'
 import instagram from '../../assets/images/instagram.png'
+import github from "../../assets/images/github.png";
+import medium from "../../assets/images/medium.png";
 
 const Contact = () => {
   const [num1, setNum1] = useState(0)
@@ -116,16 +118,22 @@ const Contact = () => {
             <span className='text-xl lg:text-2xl font-bold'>Follow Us</span>
             <div className='flex gap-x-2.5 mt-6 lg:mt-10'>
                 <div className='facebook_icon bg-white rounded-[6px] p-1.5 lg:p-2 w-8 lg:w-9'>
-                  <a href=""><img src={facebook} alt="" /></a>
+                  <a href="https://www.facebook.com/muhammadusmansqa"><img src={facebook} alt="" /></a>
                 </div>
                 <div className='twitter_icon bg-white rounded-[6px] p-1.5 lg:p-2 w-8 lg:w-9'>
-                  <a href=""><img src={twitter} alt="" /></a>
+                  <a href="https://x.com/musmansqa?s=21&t=NodGaNT6fw8ocUb9Y-1fhw"><img src={twitter} alt="" /></a>
                 </div>
                 <div className='linked_icon bg-white rounded-[6px] p-1.5 lg:p-2 w-8 lg:w-9'>
                   <a href="https://www.linkedin.com/in/sdet-muhammadusman/" target='_blank'><img src={linkedin} alt="" /></a>
                 </div>
                 <div className='instagram_icon bg-white rounded-[6px] p-1.5 lg:p-2 w-8 lg:w-9'>
-                  <a href=""><img src={instagram} alt="" /></a>
+                  <a href="https://www.instagram.com/muhammadusmansqa/"><img src={instagram} alt="" /></a>
+                </div>
+                <div className='github_icon bg-white rounded-[6px] p-1.5 lg:p-2 w-8 lg:w-9'>
+                  <a href="https://github.com/sardar-usman"><img src={github} alt="" /></a>
+                </div>
+                <div className='medium_icon bg-white rounded-[6px] p-1.5 lg:p-2 w-8 lg:w-9'>
+                  <a href="https://medium.com/@link2muhammadusman"><img src={medium} alt="" /></a>
                 </div>
             </div>
           </div>
