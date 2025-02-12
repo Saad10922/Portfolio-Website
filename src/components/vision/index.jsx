@@ -282,49 +282,7 @@ const AboutMe = () => {
   
   return (
     <div id="skills" className='About Section bg-gray-900 text-white'>
-      {/* ... (vision and about section code) */}
-      {/* <div id="about-content" className='bg-black grid grid-cols-1 md:grid-cols-2 min-h-[50vh] text-white'>
-        <div id="about-text" className='order-2 md:order-1 px-10 lg:px-14 xl:px-16 py-4 md:p-10 flex flex-col justify-center'>
-          <span id="about-title" className='text-xl md:text-2xl font-bold'>About Me</span>
-          <p id="about-description" className='sm:text-lg md:text-[12px] lg:text-[14px] xl:text-lg mt-2 leading-relaxed'>
-          Results-driven SQA Automation Engineer with over eight years of experience in manual and automation testing for web,
-mobile, and desktop applications. Skilled in designing and implementing comprehensive testing strategies across
-various platforms, including Frontend, Backend, APIs, Databases, and AWS applications. Proficient in multiple
-programming languages with expertise in different testing types such as regression, smoke, sanity, and security testing.
-Known for enhancing software quality, reducing critical defects, and accelerating release cycles through effective test
-planning and execution. Adept at leading testing efforts for high-impact projects and collaborating with cross-functional
-teams to deliver reliable and high-performing software solutions.
-          </p>
-        </div>
-        <div id="about-image" className='order-1 md:order-2 h-[250px] md:h-full'>
-          <img id="vision-image" src={vision} alt="Vision" className='h-full w-full object-cover' />
-        </div>
-      </div> */}
-
-      <div id="skills-section" className="py-12 px-6 md:px-12 lg:px-24">
-        <div id="skills-container" className="bg-gray-900 text-white py-12 px-6 md:px-12 lg:px-24">
-          <div id="skills-content">
-            
-            <h2 id="skills-title" className="text-2xl xl:text-3xl font-bold mb-8 xl:mb-16 text-center">Technical Skills & Tools</h2>
-
-            {Object.entries(skills).map(([category, skillList]) => (
-              <div id={`skill-category-${category}`} key={category} className="mb-8">
-                <h3 id={`category-title-${category}`} className="text-[16px] font-bold lg:text-[20px] text-blue-400 lg:font-semibold mb-4">{category}</h3>
-                <div id={`skills-grid-${category}`} className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-                  {skillList.map((skill) => (
-                    <div id={`skill-item-${skill}`} key={skill} className="bg-gray-800 rounded-lg p-4 flex flex-col items-center transform transition-all duration-300 hover:scale-105 hover:bg-gray-700 hover:shadow-lg hover:shadow-cyan-500/50 cursor-pointer">
-                      <div id={`skill-icon-${skill}`} className="h-16 w-16"><img src={skillIcons[skill]} alt={skill.slice(0,3)}/></div>
-                      <p id={`skill-name-${skill}`} className="mt-2 text-center">{skill}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      <div id="achievements-section" className='achievements bg-black py-6 md:py-10 grid grid-cols-1 md:grid-cols-3 gap-6 text-white text-center mt-12 xl:mt-6'>
+            <div id="achievements-section" className='achievements bg-black py-6 md:py-10 grid grid-cols-1 md:grid-cols-3 gap-6 text-white text-center '>
           {[
             { value: experience, label: "Years Experience" },
             { value: projects, label: "Projects Completed" },
@@ -354,6 +312,36 @@ teams to deliver reliable and high-performing software solutions.
             </div>
           ))}
         </div>
+
+
+
+
+      {/* ... (vision and about section code) */}
+      
+
+      <div id="skills-section" className="py-12 px-6 md:px-12 lg:px-24">
+        <div id="skills-container" className="bg-gray-900 text-white py-12 px-6 md:px-12 lg:px-24">
+          <div id="skills-content">
+            
+            <h2 id="skills-title" className="text-2xl xl:text-3xl font-bold mb-8 xl:mb-16 text-center">Technical Skills & Tools</h2>
+
+            {Object.entries(skills).map(([category, skillList]) => (
+              <div id={`skill-category-${category}`} key={category} className="mb-8">
+                <h3 id={`category-title-${category}`} className="text-[16px] font-bold lg:text-[20px] text-blue-400 lg:font-semibold mb-4">{category}</h3>
+                <div id={`skills-grid-${category}`} className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                  {skillList.map((skill) => (
+                    <div id={`skill-item-${skill}`} key={skill} className="bg-gray-800 rounded-lg p-4 flex flex-col items-center transform transition-all duration-300 hover:scale-105 hover:bg-gray-700 hover:shadow-lg hover:shadow-cyan-500/50 cursor-pointer">
+                      <div id={`skill-icon-${skill}`} className="h-16 w-16"><img src={skillIcons[skill]} alt={skill.slice(0,3)}/></div>
+                      <p id={`skill-name-${skill}`} className="mt-2 text-center">{skill}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
 
         <style>
           {`

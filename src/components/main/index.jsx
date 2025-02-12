@@ -29,7 +29,7 @@ const Main = () => {
 
     return (
       <div id="home" className="overflow-hidden mt-[60px] sm:mt-[2px]  md:mt-[80px] xl:mt-[20px]">
-        <div id="main-container" className='grid grid-cols-1 md:grid-cols-2 bg-[#1D1D1D] w-full min-h-[calc(100vh-80px)] md:min-h-[350px] lg:min-h-[400px] xl:min-h-screen text-white px-4 sm:px-10'>
+        <div id="main-container" className='grid grid-cols-1 xl:grid-cols-2 bg-[#1D1D1D] w-full min-h-[calc(100vh-80px)] md:min-h-[350px] lg:min-h-[400px] xl:min-h-screen text-white px-4 sm:px-10'>
           <div 
             id="parallax-image"
             ref={parallaxRef}
@@ -45,16 +45,11 @@ const Main = () => {
           >
           </div>
           <div id="content-container" className='w-full px-4 py-6 sm:px-6 md:px-10 flex flex-col justify-center gap-2 md:gap-4 lg:p-20 my-auto order-2 md:order-1'>
-            <span id="name" className='font-normal text-lg sm:text-xl md:text-[14px] md:font-medium lg:font-normal lg:text-2xl xl:text-3xl'>Muhammad Usman</span>
-            <p id="title" className='text-base sm:text-lg md:text-[12px] lg:text-[18px] xl:text-lg'>SQA Automation Engineer | Freelancer | ISTQB®CTFL</p>
-            <span id="position" className='text-lg sm:text-xl md:text-[14px] md:font-bold lg:text-2xl lg:font-normal xl:text-3xl font-medium'>About Me</span>
-            <p id="description" className='text-base sm:text-lg md:text-[12px] lg:text-[18px] xl:text-lg'>Results-driven SQA Automation Engineer with over eight years of experience in manual and automation testing for web,
-mobile, and desktop applications. Skilled in designing and implementing comprehensive testing strategies across
-various platforms, including Frontend, Backend, APIs, Databases, and AWS applications. Proficient in multiple
-programming languages with expertise in different testing types such as regression, smoke, sanity, and security testing.
-Known for enhancing software quality, reducing critical defects, and accelerating release cycles through effective test
-planning and execution. Adept at leading testing efforts for high-impact projects and collaborating with cross-functional
-teams to deliver reliable and high-performing software solutions.</p>
+            <p id="title" className='text-base sm:text-lg md:text-[14px] lg:text-[20px] xl:text-2xl font-semibold'>SQA Automation Engineer | Freelancer | ISTQB®CTFL</p>
+            <span id="position" className='text-lg sm:text-xl md:text-[14px] md:font-bold lg:text-2xl lg:font-bold xl:text-2xl font-medium'>About Me</span>
+            <p id="description" className='text-base sm:text-lg md:text-[12px] lg:text-[18px] xl:text-lg'>Highly skilled SQA Automation Engineer with almost 9 years of experience in software quality assurance, test automation, and performance testing. As an ISTQB® Certified professional, I have a proven track record of enhancing software quality through manual and automated testing, ensuring seamless digital experiences across web, mobile, and backend systems. My expertise spans multiple programming languages, including Java, JavaScript, TypeScript, Python, and Ruby, and automation frameworks such as Cypress, Selenium, Playwright, Appium, and WebDriver.io. Throughout my career, I have worked with global enterprises, fintech companies, and SaaS platforms, significantly improving test coverage, deployment efficiency, and overall software reliability.
+At DP World, I lead the automation of logistics software, achieving 80% test coverage while reducing manual testing efforts by 60%. At Afiniti, I optimized call center automation, building robust testing frameworks and integrating CI/CD pipelines with Jenkins. My freelance experience includes working on e-commerce, healthcare, blockchain, and trading platforms, ensuring API security, load testing, and seamless user interactions.
+Passionate about continuous learning and innovation, I remains committed to refining QA strategies, automation frameworks, and cloud-based testing solutions. My approach focuses on automation-first methodologies, optimizing test execution, and aligning testing practices with business objectives. Always eager to take on new challenges, I am open to collaborating on projects that require robust test automation, API testing, and performance engineering.</p>
             <div id="button-container" className='mt-4'>
               <button 
                 id="contact-button"

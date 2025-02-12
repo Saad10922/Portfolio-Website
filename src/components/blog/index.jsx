@@ -1,9 +1,12 @@
-import React, { memo, useState } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import React, { memo } from 'react';
 import blog1 from "../../assets/images/blog1.jpg";
 import blog2 from "../../assets/images/blog2.jpg";
 import blog3 from "../../assets/images/blog3.jpg";
 import blog4 from "../../assets/images/blog4.jpg";
+import blog6 from "../../assets/images/blog6.jpg";
+import blog7 from "../../assets/images/blog7.jpg";
+import blog8 from "../../assets/images/blog8.jpeg";
+import blogBack from "../../assets/images/blog_back.jpg";
 
 const profile = 'https://media.licdn.com/dms/image/v2/D4D03AQEyAuIwHILt5w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1712489655678?e=1744243200&v=beta&t=jYLLgwiUPrrHBwsFu7XCb3Mtz_x_E0OeYCv7btyWcvY'
 const blogPosts = [
@@ -43,106 +46,94 @@ const blogPosts = [
     profile: profile,
     link: 'https://www.linkedin.com/pulse/mastering-remote-qa-leadership-strategies-leading-usman-istqb-ctfl-fckmf/',
   },
+  {
+    id: 5,
+    title: 'The Psychology Behind Error Reporting and Feedback in Software Quality Assurance',
+    author: 'Muhammad Usman',
+    date: 'July 8, 2024',
+    image: 'https://media.licdn.com/dms/image/v2/D4D12AQHx5GZZD10Gfg/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1720461899620?e=1744848000&v=beta&t=DwUi9a35-ekNAgbRiWa-m4B75CKVqk_nmDneWWgw44U',
+    profile: profile,
+    link: 'https://www.linkedin.com/pulse/psychology-behind-error-reporting-feedback-software-quality-usman-tsl3f/',
+  },
+  {
+    id: 6,
+    title: 'Shift-Right Testing: How Testing in Production Improves Software Reliability and User Experience',
+    author: 'Muhammad Usman',
+    date: 'October 23, 2024',
+    image: blog6,
+    profile: profile,
+    link: 'https://www.linkedin.com/pulse/shift-right-testing-how-production-improves-software-muhammad-0v69f/',
+  },
+  {
+    id: 7,
+    title: 'How Machine Learning Algorithms Can Optimize Test Coverage',
+    author: 'Muhammad Usman',
+    date: 'October 21, 2024',
+    image: blog7,
+    profile: profile,
+    link: 'https://www.linkedin.com/pulse/how-machine-learning-algorithms-can-optimize-test-usman-istqb-ctfl-3hvyf/',
+  },
+  {
+    id: 8,
+    title: 'Self-Healing Testing Tools: The Future of Stable and Reliable Testing',
+    author: 'Muhammad Usman',
+    date: 'February 11, 2025',
+    image: blog8,
+    profile: profile,
+    link: 'https://www.linkedin.com/pulse/self-healing-testing-tools-future-stable-reliable-usman-istqb-ctfl-vegbf/',
+  }
 ];
+
 const Blogs = memo(() => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const handleNext = () => {
-    if (currentIndex < blogPosts.length - 3) {
-      setCurrentIndex(currentIndex + 1);
-    }
-  };
-
-  const handlePrev = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
-    }
-  };
-
   return (
-    <div id="blog" className="w-full dark:bg-gray-800 py-10 pb-30 relative">
-      <div id="blog-container" className="mx-auto max-w-7xl px-6 lg:px-8 pt-8">
+    <div id="blog" className="w-full py-10 pb-30 relative overflow-hidden" style={{ backgroundImage: `url(${blogBack})`, backgroundSize: 'auto', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }} >
+      <div id="blog-container" className="w-full">
         <div id="blog-header" className="mx-auto max-w-2xl text-center">
-          <h2 id="blog-title" className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-3xl">Blogs</h2>
-          <p id="blog-description" className="mt-2 text-base sm:text-lg leading-8 text-gray-600 dark:text-gray-300">
-          Dive into the latest in technology with my insightful blog posts.
+          <h2 id="blog-title" className="text-2xl font-bold tracking-tight text-white sm:text-3xl">Blogs</h2>
+          <p id="blog-description" className="mt-2 text-base sm:text-lg leading-8 text-white ">
+            Dive into the latest in technology with my insightful blog posts.
           </p>
         </div>
 
-        <div id="blog-content" className="relative mt-8">
-          <div id="mobile-view" className="block md:hidden">
-            <div id="mobile-slider" className="relative flex items-center justify-center">
-              {currentIndex > 0 && (
-                <button id="mobile-prev-btn" onClick={handlePrev} className="absolute left-4 z-10 p-3 bg-gray-700 rounded-full hover:bg-gray-600">
-                  <ChevronLeft id="mobile-prev-icon" className="h-6 w-6 text-white" />
-                </button>
-              )}
-
-              <div id="mobile-article-container" className="w-full max-w-2xl mx-auto">
-                <article id={`mobile-article-${blogPosts[currentIndex].id}`} className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 dark:bg-gray-700 px-8 py-8 pb-8 pt-80 sm:pt-48 lg:pt-80">
-                  <img id={`mobile-image-${blogPosts[currentIndex].id}`} src={blogPosts[currentIndex].image} alt="" className="absolute inset-0 -z-10 h-full w-full object-cover" />
-                  <div id={`mobile-gradient-${blogPosts[currentIndex].id}`} className="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
-                  <div id={`mobile-ring-${blogPosts[currentIndex].id}`} className="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
-                  <div id={`mobile-meta-${blogPosts[currentIndex].id}`} className="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
-                    <time id={`mobile-date-${blogPosts[currentIndex].id}`} className="mr-8">{blogPosts[currentIndex].date}</time>
-                    <div id={`mobile-author-container-${blogPosts[currentIndex].id}`} className="-ml-4 flex items-center gap-x-4">
-                      <div id={`mobile-author-info-${blogPosts[currentIndex].id}`} className="flex gap-x-2.5">
-                        <img id={`mobile-profile-${blogPosts[currentIndex].id}`} src={blogPosts[currentIndex].profile} alt="" className="h-6 w-6 flex-none rounded-full bg-white/10" />
-                        {blogPosts[currentIndex].author}
-                      </div>
-                    </div>
-                  </div>
-                  <h3 id={`mobile-title-${blogPosts[currentIndex].id}`} className="mt-3 text-lg font-semibold leading-6 text-white">
-                    <a id={`mobile-link-${blogPosts[currentIndex].id}`} href={blogPosts[currentIndex].link}><span className="absolute inset-0"></span>{blogPosts[currentIndex].title}</a>
-                  </h3>
-                </article>
-              </div>
-
-              {currentIndex < blogPosts.length - 1 && (
-                <button id="mobile-next-btn" onClick={handleNext} className="absolute right-4 z-10 p-3 bg-gray-700 rounded-full hover:bg-gray-600">
-                  <ChevronRight id="mobile-next-icon" className="h-6 w-6 text-white" />
-                </button>
-              )}
-            </div>
-          </div>
-
-          <div id="desktop-view" className="hidden md:block relative">
-            {currentIndex > 0 && (
-              <button id="desktop-prev-btn" onClick={handlePrev} className="absolute left-4 top-1/2 z-10 p-3 bg-gray-700 rounded-full hover:bg-gray-600 transform -translate-y-1/2">
-                <ChevronLeft id="desktop-prev-icon" className="h-6 w-6 text-white" />
-              </button>
-            )}
-            
-            <div id="desktop-grid" className="grid grid-cols-3 gap-8">
-              {blogPosts.slice(currentIndex, currentIndex + 3).map((post) => (
-                <article id={`desktop-article-${post.id}`} key={post.id} className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 dark:bg-gray-700 px-8 py-8 pb-8 pt-80 sm:pt-48 lg:pt-80">
-                  <img id={`desktop-image-${post.id}`} src={post.image} alt="" className="absolute inset-0 -z-10 h-full w-full object-cover" />
-                  <div id={`desktop-gradient-${post.id}`} className="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
-                  <div id={`desktop-ring-${post.id}`} className="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
-                  <div id={`desktop-meta-${post.id}`} className="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
-                    <time id={`desktop-date-${post.id}`} className="mr-8">{post.date}</time>
-                    <div id={`desktop-author-container-${post.id}`} className="-ml-4 flex items-center gap-x-4">
-                      <div id={`desktop-author-info-${post.id}`} className="flex gap-x-2.5">
-                        <img id={`desktop-profile-${post.id}`} src={post.profile} alt="" className="h-6 w-6 flex-none rounded-full bg-white/10" />
+        <div id="blog-content" className="mt-8">
+          <div className="relative flex overflow-x-hidden">
+            <div className="animate-marquee flex whitespace-nowrap">
+              {[...blogPosts, ...blogPosts].map((post, index) => (
+                <article key={`${post.id}-${index}`} className="w-[300px] md:w-[400px] inline-block mx-4 relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900  px-8 py-8 pb-8 pt-80 sm:pt-48 lg:pt-80">
+                  <img src={post.image} alt="" className="absolute inset-0 -z-10 h-full w-full object-cover" />
+                  <div className="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+                  <div className="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+                  <div className="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
+                    <time className="mr-8">{post.date}</time>
+                    <div className="-ml-4 flex items-center gap-x-4">
+                      <div className="flex gap-x-2.5">
+                        <img src={post.profile} alt="" className="h-6 w-6 flex-none rounded-full bg-white/10" />
                         {post.author}
                       </div>
                     </div>
                   </div>
-                  <h3 id={`desktop-title-${post.id}`} className="mt-3 text-lg font-semibold leading-6 text-white">
-                    <a id={`desktop-link-${post.id}`} href={post.link}><span id={`desktop-link-span-${post.id}`} className="absolute inset-0"></span>{post.title}</a>
+                  <h3 className="mt-3 text-lg font-semibold leading-6 text-white break-words whitespace-normal">
+                    <a href={post.link}><span className="absolute inset-0"></span>{post.title}</a>
                   </h3>
                 </article>
               ))}
             </div>
-
-            {currentIndex < blogPosts.length - 3 && (
-              <button id="desktop-next-btn" onClick={handleNext} className="absolute right-4 top-1/2 z-10 p-3 bg-gray-700 rounded-full hover:bg-gray-600 transform -translate-y-1/2">
-                <ChevronRight id="desktop-next-icon" className="h-6 w-6 text-white" />
-              </button>
-            )}
           </div>
         </div>
       </div>
+      <style jsx>{`
+        @keyframes marquee {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+        .animate-marquee {
+          animation: marquee 30s linear infinite;
+        }
+      `}</style>
     </div>
   );
 });
