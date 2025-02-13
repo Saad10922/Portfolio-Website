@@ -3,9 +3,10 @@ import blog1 from "../../assets/images/blog1.jpg";
 import blog2 from "../../assets/images/blog2.jpg";
 import blog3 from "../../assets/images/blog3.jpg";
 import blog4 from "../../assets/images/blog4.jpg";
+import blog5 from "../../assets/images/blog5.jpg";
 import blog6 from "../../assets/images/blog6.jpg";
 import blog7 from "../../assets/images/blog7.jpg";
-import blog8 from "../../assets/images/blog8.jpeg";
+import blog8 from "../../assets/images/blog8.jpg";
 import blogBack from "../../assets/images/blog_back.jpg";
 
 const profile = 'https://media.licdn.com/dms/image/v2/D4D03AQEyAuIwHILt5w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1712489655678?e=1744243200&v=beta&t=jYLLgwiUPrrHBwsFu7XCb3Mtz_x_E0OeYCv7btyWcvY'
@@ -51,7 +52,7 @@ const blogPosts = [
     title: 'The Psychology Behind Error Reporting and Feedback in Software Quality Assurance',
     author: 'Muhammad Usman',
     date: 'July 8, 2024',
-    image: 'https://media.licdn.com/dms/image/v2/D4D12AQHx5GZZD10Gfg/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1720461899620?e=1744848000&v=beta&t=DwUi9a35-ekNAgbRiWa-m4B75CKVqk_nmDneWWgw44U',
+    image: blog5,
     profile: profile,
     link: 'https://www.linkedin.com/pulse/psychology-behind-error-reporting-feedback-software-quality-usman-tsl3f/',
   },
